@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ОПОРА &mdash; юридическая помощь гражданам и бизнесу в Москве</title>
+<meta name="description" content="Юристы по семейным, жилищным, страховым и трудовым спорам, защите прав потребителей и банкротству. Бесплатная консультация 30 минут, цена работы фиксируется в договоре.">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top">ОПОРА<span>юридическая компания</span></a>
+  <nav class="menu">
+    <a href="#practice">Направления</a>
+    <a href="#quiz">Оценка дела</a>
+    <a href="#cases">Дела</a>
+    <a href="#price">Цены</a>
+    <a href="#team">Юристы</a>
+  </nav>
+  <a class="btn btn-brass btn-sm" href="#form">Консультация</a>
+</header>
+
+<!-- ПЕРВЫЙ ЭКРАН -->
+<section class="hero" id="top">
+  <img class="hero-bg" src="assets/hero.jpg" alt="Кабинет юриста с видом на набережную" fetchpriority="high">
+  <div class="hero-in wrap">
+    <span class="tag reveal">Москва · с 2013 года · гражданам и бизнесу</span>
+    <h1 class="reveal">Решаем правовые споры<br><em>до суда и в суде</em></h1>
+    <p class="reveal">Разберем ситуацию на бесплатной консультации, честно скажем о шансах
+      и составим план. Стоимость работы фиксируем в договоре до начала.</p>
+    <div class="hero-act reveal">
+      <a class="btn btn-brass" href="#quiz">Оценить ситуацию за минуту</a>
+      <a class="btn btn-ghost" href="#form">Задать вопрос юристу</a>
+    </div>
+    <ul class="hero-facts reveal">
+      <li><b>12 лет</b><span>практики</span></li>
+      <li><b>1 400+</b><span>завершенных дел</span></li>
+      <li><b>30 мин</b><span>консультация бесплатно</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- НАПРАВЛЕНИЯ -->
+<section class="section" id="practice">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Направления</span>
+      <h2 class="reveal">С чем мы помогаем</h2>
+      <p class="reveal">Берем дела, в которых разбираемся лучше всего. Если вопрос не наш —
+        скажем сразу и подскажем, к кому обратиться.</p>
+    </div>
+    <div class="practice">
+      <article class="p-card reveal"><span class="p-num">01</span>
+        <h3>Семейные споры</h3>
+        <p>Развод, раздел имущества и долгов, алименты, порядок общения с детьми, брачный договор.</p></article>
+      <article class="p-card reveal"><span class="p-num">02</span>
+        <h3>Недвижимость</h3>
+        <p>Проверка сделки, споры с застройщиком, неустойка за просрочку, наследство, выселение.</p></article>
+      <article class="p-card reveal"><span class="p-num">03</span>
+        <h3>ДТП и страховые</h3>
+        <p>Доплата по ОСАГО и КАСКО, взыскание ущерба с виновника, споры о степени вины.</p></article>
+      <article class="p-card reveal"><span class="p-num">04</span>
+        <h3>Защита потребителей</h3>
+        <p>Возврат денег за товар и услуги, некачественный ремонт, навязанные страховки и курсы.</p></article>
+      <article class="p-card reveal"><span class="p-num">05</span>
+        <h3>Трудовые споры</h3>
+        <p>Незаконное увольнение, невыплата зарплаты, восстановление на работе, компенсации.</p></article>
+      <article class="p-card reveal"><span class="p-num">06</span>
+        <h3>Долги и бизнес</h3>
+        <p>Взыскание долгов с контрагентов, банкротство граждан, сопровождение договоров компании.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- КВИЗ -->
+<section class="section quiz-sec" id="quiz">
+  <div class="wrap quiz-grid">
+    <div class="quiz-intro">
+      <span class="kicker reveal">Оценка дела</span>
+      <h2 class="reveal">Узнайте, какая помощь нужна и сколько это стоит</h2>
+      <p class="reveal">Четыре вопроса — и вы увидите формат работы, ориентир по цене и срокам.
+        Это предварительная оценка: точную цену юрист назовет после консультации.</p>
+    </div>
+
+    <div class="quiz reveal" id="quizBox">
+      <div class="q-bar"><span id="qBar"></span></div>
+      <p class="q-count" id="qCount">Вопрос 1 из 4</p>
+
+      <fieldset class="q-step active" data-step="0">
+        <legend>Какой у вас вопрос?</legend>
+        <div class="q-opts">
+          <label><input type="radio" name="area" value="family"><span>Семья, развод, алименты</span></label>
+          <label><input type="radio" name="area" value="realty"><span>Квартира, дом, наследство</span></label>
+          <label><input type="radio" name="area" value="auto"><span>ДТП, страховая</span></label>
+          <label><input type="radio" name="area" value="consumer"><span>Товар или услуга, возврат денег</span></label>
+          <label><input type="radio" name="area" value="labor"><span>Работа и зарплата</span></label>
+          <label><input type="radio" name="area" value="business"><span>Долги, бизнес, банкротство</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q-step" data-step="1">
+        <legend>На какой стадии ситуация?</legend>
+        <div class="q-opts">
+          <label><input type="radio" name="stage" value="start"><span>Только началось, хочу понять, что делать</span></label>
+          <label><input type="radio" name="stage" value="claim"><span>Нужна претензия или переговоры</span></label>
+          <label><input type="radio" name="stage" value="court"><span>Нужно идти в суд или суд уже идет</span></label>
+          <label><input type="radio" name="stage" value="appeal"><span>Решение суда уже есть, хочу обжаловать</span></label>
+          <label><input type="radio" name="stage" value="enforce"><span>Решение в мою пользу, но не исполняют</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q-step" data-step="2">
+        <legend>О какой сумме спор?</legend>
+        <div class="q-opts">
+          <label><input type="radio" name="sum" value="small"><span>До 100 000 ₽</span></label>
+          <label><input type="radio" name="sum" value="mid"><span>От 100 000 до 1 млн ₽</span></label>
+          <label><input type="radio" name="sum" value="big"><span>Больше 1 млн ₽</span></label>
+          <label><input type="radio" name="sum" value="none"><span>Спор не о деньгах</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q-step" data-step="3">
+        <legend>Насколько срочно?</legend>
+        <div class="q-opts">
+          <label><input type="radio" name="urgent" value="today"><span>Срочно, есть крайний срок</span></label>
+          <label><input type="radio" name="urgent" value="week"><span>В течение недели</span></label>
+          <label><input type="radio" name="urgent" value="calm"><span>Не горит, хочу разобраться</span></label>
+        </div>
+      </fieldset>
+
+      <div class="q-result" id="qResult" hidden>
+        <span class="kicker">Предварительная оценка</span>
+        <h3 id="rTitle"></h3>
+        <dl class="r-list">
+          <div><dt>Стоимость</dt><dd id="rPrice"></dd></div>
+          <div><dt>Срок</dt><dd id="rTime"></dd></div>
+          <div><dt>Первый шаг</dt><dd id="rFirst"></dd></div>
+        </dl>
+        <p class="r-note" id="rNote"></p>
+        <a class="btn btn-brass btn-wide" href="#form" id="toForm">Обсудить с юристом бесплатно</a>
+      </div>
+
+      <div class="q-nav" id="qNav">
+        <button class="btn btn-line" type="button" id="qBack" disabled>Назад</button>
+        <button class="btn btn-brass" type="button" id="qNext" disabled>Далее</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ДЕЛА -->
+<section class="section" id="cases">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Практика</span>
+      <h2 class="reveal">Несколько дел из последних</h2>
+      <p class="reveal">Что было на входе, что сделали и чем закончилось.</p>
+    </div>
+    <div class="cases">
+      <figure class="case-photo reveal"><img src="assets/docs.jpg" alt="Документы и перьевая ручка на столе юриста" loading="lazy"></figure>
+      <article class="case reveal">
+        <span class="case-tag">Защита потребителей</span>
+        <h3>Вернули деньги за ремонт, который пришлось переделывать</h3>
+        <p>Подрядчик сорвал сроки и испортил стяжку. Добились возврата аванса, неустойки
+          и штрафа 50% по закону о защите прав потребителей.</p>
+        <div class="case-res"><b>1 240 000 ₽</b><span>взыскано · 4 месяца</span></div>
+      </article>
+      <article class="case reveal">
+        <span class="case-tag">Недвижимость</span>
+        <h3>Неустойка с застройщика за год просрочки</h3>
+        <p>Застройщик предлагал 60 000 ₽ «по-хорошему». Подали иск, суд взыскал неустойку
+          за весь период и компенсацию морального вреда.</p>
+        <div class="case-res"><b>486 000 ₽</b><span>вместо 60 000 · 5 месяцев</span></div>
+      </article>
+      <article class="case reveal">
+        <span class="case-tag">ДТП и страховые</span>
+        <h3>Доплата по ОСАГО после заниженной оценки</h3>
+        <p>Страховая насчитала треть от реального ущерба. Провели независимую экспертизу,
+          прошли финансового уполномоченного и суд.</p>
+        <div class="case-res"><b>+312 000 ₽</b><span>к выплате страховой · 3 месяца</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- КАК РАБОТАЕМ -->
+<section class="section steps-sec" id="steps">
+  <div class="wrap steps-grid">
+    <figure class="steps-photo reveal"><img src="assets/meeting.jpg" alt="Юрист консультирует клиентов в переговорной" loading="lazy"></figure>
+    <div>
+      <span class="kicker reveal">Как работаем</span>
+      <h2 class="reveal">Понятно на каждом шаге</h2>
+      <ol class="steps">
+        <li class="reveal"><b>Консультация</b><span>30 минут бесплатно — в офисе, по телефону или видео.
+          Смотрим документы и честно оцениваем перспективы.</span></li>
+        <li class="reveal"><b>План и договор</b><span>Пишем, что делаем, в какие сроки и за какую сумму.
+          Цена в договоре не меняется по ходу дела.</span></li>
+        <li class="reveal"><b>Работа по делу</b><span>Готовим документы, ведем переговоры, представляем вас
+          в суде. Вам не нужно ходить на заседания.</span></li>
+        <li class="reveal"><b>Отчет после каждого этапа</b><span>Присылаем в мессенджер, что сделано и что дальше.
+          Юрист на связи в рабочее время.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="section" id="price">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Стоимость</span>
+      <h2 class="reveal">Цены без сюрпризов</h2>
+      <p class="reveal">Итоговая сумма зависит от сложности дела и фиксируется в договоре.
+        Госпошлину и экспертизу оплачиваете отдельно — назовем суммы заранее.</p>
+    </div>
+    <div class="prices">
+      <article class="price reveal">
+        <h3>Консультация</h3>
+        <p class="price-sum">0 ₽</p>
+        <ul><li>30 минут с юристом</li><li>Разбор документов</li><li>Оценка шансов и план</li></ul>
+        <a class="btn btn-line btn-wide" href="#form">Записаться</a>
+      </article>
+      <article class="price price-main reveal">
+        <span class="price-badge">Чаще всего выбирают</span>
+        <h3>Ведение дела в суде</h3>
+        <p class="price-sum">от 35 000 ₽</p>
+        <ul><li>Иск и все процессуальные документы</li><li>Участие во всех заседаниях</li>
+          <li>Получение решения и исполнительного листа</li><li>Отчеты после каждого заседания</li></ul>
+        <a class="btn btn-brass btn-wide" href="#form">Обсудить дело</a>
+      </article>
+      <article class="price reveal">
+        <h3>Документ</h3>
+        <p class="price-sum">от 5 000 ₽</p>
+        <ul><li>Претензия или жалоба</li><li>Проверка договора</li><li>Готово за 1–3 дня</li></ul>
+        <a class="btn btn-line btn-wide" href="#form">Заказать</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ЮРИСТЫ -->
+<section class="section team-sec" id="team">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Команда</span>
+      <h2 class="reveal">Кто будет вести ваше дело</h2>
+    </div>
+    <div class="team">
+      <figure class="person reveal"><img src="assets/lawyer1.jpg" alt="Андрей Савельев" loading="lazy">
+        <figcaption><b>Андрей Савельев</b><span>Управляющий партнер · стаж 20 лет</span>
+          <em>Недвижимость, наследство, споры бизнеса</em></figcaption></figure>
+      <figure class="person reveal"><img src="assets/lawyer2.jpg" alt="Ольга Миронова" loading="lazy">
+        <figcaption><b>Ольга Миронова</b><span>Старший юрист · стаж 12 лет</span>
+          <em>Семейные споры, раздел имущества, алименты</em></figcaption></figure>
+      <figure class="person reveal"><img src="assets/lawyer3.jpg" alt="Дмитрий Лебедев" loading="lazy">
+        <figcaption><b>Дмитрий Лебедев</b><span>Юрист · стаж 7 лет</span>
+          <em>ДТП, страховые, защита потребителей</em></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ИСКОВАЯ ДАВНОСТЬ -->
+<section class="section term-sec" id="term">
+  <div class="wrap term-grid">
+    <div>
+      <span class="kicker reveal">Проверьте сами</span>
+      <h2 class="reveal">Не опоздали ли вы с иском?</h2>
+      <p class="reveal">По общему правилу на обращение в суд есть 3 года с момента, когда вы узнали
+        о нарушении (ст. 196 и 200 ГК РФ). Для некоторых споров срок короче — например,
+        по трудовым делам он считается месяцами.</p>
+    </div>
+    <div class="term reveal">
+      <label class="field"><span>Когда вы узнали о нарушении</span>
+        <input type="date" id="termDate"></label>
+      <p class="term-out" id="termOut">Укажите дату — посчитаем, сколько времени осталось.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="head"><span class="kicker reveal">Отзывы</span>
+      <h2 class="reveal">Что говорят клиенты</h2></div>
+    <div class="reviews">
+      <blockquote class="review reveal"><p>«Ольга спокойно объяснила, что меня ждет при разделе
+        квартиры, и все так и вышло. Ни разу не пришлось самой идти в суд».</p>
+        <cite>Марина К. · раздел имущества</cite></blockquote>
+      <blockquote class="review reveal"><p>«Страховая три месяца отвечала отписками. Ребята взялись —
+        и через суд получили почти в три раза больше первой выплаты».</p>
+        <cite>Игорь Т. · доплата по ОСАГО</cite></blockquote>
+      <blockquote class="review reveal"><p>«Понравилось, что цену назвали сразу и она не выросла.
+        После каждого заседания приходил короткий отчет».</p>
+        <cite>Сергей В. · спор с застройщиком</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ВОПРОСЫ -->
+<section class="section faq-sec" id="faq">
+  <div class="wrap">
+    <div class="head"><span class="kicker reveal">Вопросы</span>
+      <h2 class="reveal">Частые вопросы</h2></div>
+    <div class="faq">
+      <details class="reveal"><summary>Консультация правда бесплатная?</summary>
+        <p>Да, первые 30 минут. Этого хватает, чтобы понять суть дела, посмотреть документы
+          и сказать, есть ли смысл продолжать. Ни к чему не обязывает.</p></details>
+      <details class="reveal"><summary>Вы гарантируете выигрыш в суде?</summary>
+        <p>Нет, и не верьте тем, кто гарантирует: решение принимает суд. Мы гарантируем другое —
+          честную оценку шансов до начала работы и полную отдачу в процессе.</p></details>
+      <details class="reveal"><summary>Можно ли не ходить на заседания?</summary>
+        <p>Да. По нотариальной доверенности мы представляем ваши интересы сами,
+          а вы получаете отчет после каждого заседания.</p></details>
+      <details class="reveal"><summary>Работаете с другими городами?</summary>
+        <p>Консультируем и готовим документы дистанционно по всей России. В судах
+          представляем интересы в Москве и области.</p></details>
+      <details class="reveal"><summary>Можно ли оплатить частями?</summary>
+        <p>Да, обычно оплата делится по этапам: часть при подписании договора,
+          остальное — после подачи иска или по ходу процесса.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ЗАЯВКА -->
+<section class="section form-sec" id="form">
+  <div class="wrap form-grid">
+    <div>
+      <span class="kicker reveal">Бесплатная консультация</span>
+      <h2 class="reveal">Расскажите о ситуации — перезвоним за 15 минут</h2>
+      <p class="reveal">В рабочее время юрист свяжется с вами, задаст пару уточняющих
+        вопросов и предложит время консультации.</p>
+      <div class="contacts reveal">
+        <a href="tel:+74950000000">+7 495 000-00-00</a>
+        <span>Пн–Пт 9:00–20:00, Сб 10:00–16:00</span>
+        <span>Москва, Пресненская набережная</span>
+      </div>
+    </div>
+
+    <form class="lead reveal" id="leadForm" novalidate>
+      <label class="field"><span>Как к вам обращаться</span>
+        <input type="text" name="name" id="name" placeholder="Анна" autocomplete="name"></label>
+      <label class="field"><span>Телефон</span>
+        <input type="tel" name="phone" id="phone" placeholder="+7 900 000-00-00" autocomplete="tel"></label>
+      <label class="field"><span>Кратко о ситуации (не обязательно)</span>
+        <textarea name="note" id="note" rows="4" placeholder="Страховая выплатила меньше, чем стоит ремонт машины"></textarea></label>
+      <label class="check"><input type="checkbox" id="agree">
+        <span>Согласен на обработку персональных данных</span></label>
+      <button class="btn btn-brass btn-wide" type="submit">Получить консультацию</button>
+      <p class="policy">Сведения о вашем деле остаются конфиденциальными.</p>
+      <p class="ok" id="ok" hidden>Заявка принята. Юрист перезвонит в течение 15 минут в рабочее время.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>ОПОРА — юридическая компания</span>
+    <span class="demo">Демонстрационный сайт. Компания и юристы вымышлены, фотографии сгенерированы, это не юридическая консультация.</span>
+    <a href="https://t.me/VladisavSSS" target="_blank" rel="noopener">Сделал сайт: @VladisavSSS</a>
+  </div>
+</footer>
+
+<a class="call-fab" href="#form" aria-label="Бесплатная консультация">Консультация бесплатно</a>
+
+<script src="js/app.js"></script>
+</body>
+</html>
